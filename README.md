@@ -30,3 +30,6 @@ function mystery(n) {
 Add your answer to this markdown file. [This
 page](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
 might help with the notation for mathematical expressions.
+
+
+The if statement is just constant time so 1. The else statment does n/3 recursively 3 times so 3T(n/3). Count is constant so add 1. The outter most for loop runs $n^2$ times, the first nested loop runs n times and the inner most for loop runs $n^2$ times. So you get $n^2 * n * n^2 = n^5$ after you disregrard the constant times from the if statement and the var count.
