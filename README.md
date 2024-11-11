@@ -36,9 +36,10 @@ The if statement is just constant time so 1. The else statment does n/3 recursiv
 
 So, to start we have:<br> $T(n) = 1$, <br> $3T(n/3) + n^5$ , <br> $3(3T((n/3)/3) + ( (n/3)^5) + n^5$ = $9T(n/9) + 3(n/3)^5 +n^5$. <br> Then we get $log_3n$ from the three levels of recursion $\frac{n}{3^i} = 1$ <br> 
 1 because the recursion happens until the size equals 1. <br>
-$n=3^i$<br>
-$i=log_3n$
+So the base case is $n=3^i$ because the recursion stops at $n/3^i=1$ then when you solve for $i$ you get 
+$i=log_3n$ <br>
 So, sub in $i$ for the unfolding<br>
+At each level of the recursion you can see the pattern, so at the $i^{th}$ level the reccurance relation is can be written 
 $3^iT(n/3^{i}) + \sum_{k=0}^{i-1} 3^{i}\* (n/3^i)^5$ and use summation for the count increasing for the nested loop that happens $n^5$ times.
 $3^{log_3n}T(n/3^{log_3n}) + \sum_{k=0}^{log_3n-1} 3^{log_3n}\* (n/3^{log_3n})^5$<br>
 this summation will equal $n^5$ after adding each iteration in the recursive call.<br>
