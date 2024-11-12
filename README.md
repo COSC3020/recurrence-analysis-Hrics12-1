@@ -59,7 +59,7 @@ Geometric series with a ratio of $(1/3^4) = (1/81)$ = $S=n^5\sum_{k=0}^{i-1} \fr
 the sum of the geometric series is: $\frac{1-r^i}{1-r}$ where $r=\frac{1}{81}$<br>
 since $\frac{1}{81^i} gets smaller for larger i the total work is dominated by $n^5$<br><br>
 So, the work at all levels is dominated by the work done at the deepest recursion level where $n=1$<br>
-the overal time complexity is $T(n)=O(n^5)$
+the overal time complexity is $O(n^5)$
 
 
 
